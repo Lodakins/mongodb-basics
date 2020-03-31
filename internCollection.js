@@ -27,7 +27,7 @@ mongoClient.connect(url,{
     var dbo = db.db("lodakins");
     dbo.createCollection("interns",function(err,result){
         if(err) throw err;
-        console.log("Collection is created");
+        console.log("Interns collection created");
         db.close();
     })
 })
