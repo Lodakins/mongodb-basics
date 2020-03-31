@@ -1,5 +1,5 @@
 # mongodb-basics
 images of successful 
-![Image of exe files]https://github.com/Lodakins/mongodb-basics/mongo1.png)
-![Image of exe files]https://github.com/Lodakins/mongodb-basics/mongo2.png)
-![Image of exe files]https://github.com/Lodakins/mongodb-basics/mongo3.png)
+![Image of exe files](https://github.com/Lodakins/mongodb-basics/blob/master/mongo1.PNG)
+![Image of exe files](https://github.com/Lodakins/mongodb-basics/blob/master/mongo2.PNG)
+![Image of exe files](https://github.com/Lodakins/mongodb-basics/blob/master/mongo3.PNG)
