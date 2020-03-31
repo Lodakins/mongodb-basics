@@ -1,0 +1,22 @@
+{
+  "name": "mongodb-basics",
+  "version": "1.0.0",
+  "description": "A mongodb task",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lodakins/mongodb-basics.git"
+  },
+  "author": "Akinrolabu Lolade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lodakins/mongodb-basics/issues"
+  },
+  "homepage": "https://github.com/Lodakins/mongodb-basics#readme",
+  "dependencies": {
+    "mongodb": "^3.5.5"
+  }
+}
