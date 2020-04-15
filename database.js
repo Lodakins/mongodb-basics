@@ -1,7 +1,8 @@
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 const insertDocuments = require('./interns');
-var url = "mongodb://localhost:27017/lodakins";
+const findDocuments = require('./findInterns');
+var url = "mongodb://localhost:27017";
 
 var mongo = new MongoClient(url,{
   useNewUrlParser: true,
@@ -10,14 +11,17 @@ var mongo = new MongoClient(url,{
 
 mongo.connect(function(err,db){
    assert.equal(err,null);
-    console.log("database created successfully");
+    console.log("database connection successfully");
       //const collect = db.collection("myMovies");
      var dbo = db.db('lodakins');
-      insertDocuments(dbo,(result)=>{
-       console.log(result);
-        
-       db.close();
-   })
+
+        // insertDocuments(dbo,()=>{
+        //     console.log("Hurray!!!");
+        // });
+       findDocuments(dbo,(result)=>{
+         console.log(result);
+         db.close();
+       });
 })
 
 

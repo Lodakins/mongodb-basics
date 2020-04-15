@@ -29,6 +29,9 @@ const insertDocuments = function(db,callback){
         const collection = db.collection("myMovies");
         collection.insertMany(data,(err,result)=>{
             assert.equal(err,null);
+            assert.equal(5,result.result.n);
+            assert.equal(5,result.insertedCount);
+            console.log("Insertion into the database successfull");
             callback(result);
         })
 }
