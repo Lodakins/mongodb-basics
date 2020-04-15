@@ -23,11 +23,11 @@ mongo.connect(function(err,db){
 
             updateDoc(dbo,(res)=>{
               console.log(res);
-                db.close();
+               
             });
 
         });
 
      });
-     
+     db.close();
 });
