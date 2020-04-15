@@ -12,6 +12,8 @@ const updateInterns =(db, callback)=>{
             assert.equal(true,result.result.ok);
             console.log("Document updated successfully");
             console.log(result);
+
+            callback(result);
            
     });
 
