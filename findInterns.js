@@ -16,12 +16,12 @@ const findDocuments=(db,callback)=>{
        assert.equal(err,null);
              console.log("Found Rating that are 7");
             console.log(result);
-    });
+     });
 
-       collect.find({},{projection:{_id:0,movie:1}}).toArray((err,result)=>{
-           assert.equal(err,null);
-           console.log(result); 
-       })
+        collect.find({},{projection:{_id:0,movie:1}}).toArray((err,result)=>{
+            assert.equal(err,null);
+            console.log(result); 
+        })
 
 };
 

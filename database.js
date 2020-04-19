@@ -16,18 +16,18 @@ mongo.connect(function(err,db){
      var dbo = db.db('lodakins');
 
        insertDocuments(dbo,(result)=>{
-         console.log(result)
+          console.log(result)
 
         findDocuments(dbo,(result)=>{
           console.log(result)
-
+          
             updateDoc(dbo,(res)=>{
-              console.log(res);
-               
-            });
+             //console.log(res);
+               db.close();
+           });
 
         });
 
-     });
-     db.close();
+      });
+    
 });
